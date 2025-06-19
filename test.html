@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPS网站功能测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-item { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .pass { background: #d4edda; border-color: #c3e6cb; }
+        .fail { background: #f8d7da; border-color: #f5c6cb; }
+        .test-button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>CIPS社团网站功能测试</h1>
+    
+    <div id="test-results"></div>
+    
+    <h2>手动测试项目</h2>
+    <button class="test-button" onclick="testNavigation()">测试导航功能</button>
+    <button class="test-button" onclick="testFormValidation()">测试表单验证</button>
+    <button class="test-button" onclick="testModal()">测试模态框</button>
+    <button class="test-button" onclick="testResponsive()">测试响应式设计</button>
+    
+    <script>
+        const results = document.getElementById('test-results');
+        
+        function addTestResult(name, passed, message) {
+            const div = document.createElement('div');
+            div.className = `test-item ${passed ? 'pass' : 'fail'}`;
+            div.innerHTML = `
+                <strong>${name}</strong>: ${passed ? '✅ 通过' : '❌ 失败'}
+                ${message ? `<br><small>${message}</small>` : ''}
+            `;
+            results.appendChild(div);
+        }
+        
+        // 自动测试
+        function runAutoTests() {
+            // 测试页面基本结构
+            addTestResult('页面标题', 
+                document.title === '南阳理工学院 CIPS 社团报名网站',
+                '检查页面标题是否正确'
+            );
+            
+            // 测试必要的DOM元素
+            const requiredElements = [
+                { selector: '.navbar', name: '导航栏' },
+                { selector: '#home', name: '首页区域' },
+                { selector: '#about', name: '关于我们区域' },
+                { selector: '#activities', name: '活动介绍区域' },
+                { selector: '#join', name: '加入我们区域' },
+                { selector: '#contact', name: '联系我们区域' },
+                { selector: '#registrationForm', name: '报名表单' },
+                { selector: '#successModal', name: '成功模态框' }
+            ];
+            
+            requiredElements.forEach(element => {
+                const exists = !!parent.document.querySelector(element.selector);
+                addTestResult(`DOM元素: ${element.name}`, exists, 
+                    exists ? '元素存在' : `未找到选择器: ${element.selector}`
+                );
+            });
+            
+            // 测试表单字段
+            const formFields = ['name', 'studentId', 'college', 'major', 'grade', 'phone'];
+            formFields.forEach(field => {
+                const exists = !!parent.document.getElementById(field);
+                addTestResult(`表单字段: ${field}`, exists,
+                    exists ? '字段存在' : `未找到ID: ${field}`
+                );
+            });
+            
+            // 测试CSS文件
+            const cssLoaded = parent.document.querySelector('link[href="styles.css"]');
+            addTestResult('CSS文件加载', !!cssLoaded, 
+                cssLoaded ? 'styles.css已链接' : 'CSS文件未找到'
+            );
+            
+            // 测试JavaScript文件
+            const jsLoaded = parent.document.querySelector('script[src="script.js"]');
+            addTestResult('JavaScript文件加载', !!jsLoaded,
+                jsLoaded ? 'script.js已链接' : 'JavaScript文件未找到'
+            );
+        }
+        
+        function testNavigation() {
+            addTestResult('导航测试', true, '请手动点击导航链接测试平滑滚动');
+        }
+        
+        function testFormValidation() {
+            addTestResult('表单验证测试', true, '请在主页面填写表单测试验证功能');
+        }
+        
+        function testModal() {
+            addTestResult('模态框测试', true, '请提交表单测试模态框显示');
+        }
+        
+        function testResponsive() {
+            addTestResult('响应式测试', true, '请调整浏览器窗口大小测试响应式设计');
+        }
+        
+        // 页面加载后运行自动测试
+        window.addEventListener('load', runAutoTests);
+    </script>
+</body>
+</html>

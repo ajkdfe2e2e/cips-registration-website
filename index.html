@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基于面向对象的大模型训练指南</title>
-    <meta name="description" content="深入浅出地学习如何运用面向对象编程思想进行大型语言模型的训练和开发">
-    <meta name="keywords" content="面向对象,大模型,机器学习,深度学习,人工智能,训练指南,教程">
+    <title>南阳理工学院 CIPS 社团报名网站</title>
+    <meta name="description" content="南阳理工学院计算机与信息化处理协会(CIPS)官方报名网站，致力于GNU/Linux技术推广和开源文化传播">
+    <meta name="keywords" content="南阳理工学院,CIPS,计算机协会,GNU/Linux,开源,社团报名,技术交流">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,538 +14,278 @@
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-brain"></i>
-                <span>大模型训练指南</span>
+            <div class="nav-brand">
+                <img src="assets/images/cips-logo.svg" alt="CIPS Logo" class="logo">
+                <span>CIPS 社团</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#overview" class="nav-link">课程概述</a></li>
-                <li><a href="#fundamentals" class="nav-link">基础知识</a></li>
-                <li><a href="#practice" class="nav-link">实践项目</a></li>
-                <li><a href="#resources" class="nav-link">资源下载</a></li>
-                <li><a href="#contact" class="nav-link">联系我们</a></li>
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#activities" class="nav-link">活动介绍</a></li>
+                <li><a href="#join" class="nav-link">加入我们</a></li>
+                <li><a href="#contact" class="nav-link">联系方式</a></li>
             </ul>
-            <button class="hamburger" title="菜单" aria-label="打开移动端菜单">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="mobile-menu-btn" title="菜单" aria-label="打开移动端菜单">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
 
     <!-- 英雄区域 -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="neural-network"></div>
-        </div>
+    <section id="home" class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">
-                基于<span class="highlight">面向对象</span>的<br>
-                大模型训练指南
-            </h1>
-            <p class="hero-subtitle">
-                深入浅出地学习如何运用面向对象编程思想进行大型语言模型的训练和开发
-            </p>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">8+</span>
-                    <span class="stat-label">核心模块</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">20+</span>
-                    <span class="stat-label">实践项目</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">学习资源</span>
+            <div class="hero-text">
+                <h1>欢迎加入<span class="highlight">CIPS</span><br>计算机与信息化处理协会</h1>
+                <p class="hero-subtitle">南阳理工学院 GNU/Linux 爱好者的技术家园</p>
+                <p class="hero-description">
+                    我们致力于推广自由软件价值，传播开源技术文化，为同学们提供专业的技术交流平台和学习环境。
+                    加入我们，一起探索计算机技术的无限可能！
+                </p>
+                <div class="hero-buttons">
+                    <a href="#join" class="btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        立即报名
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        了解更多
+                    </a>
                 </div>
             </div>
-            
-            <div class="hero-buttons">
-                <a href="#fundamentals" class="btn btn-primary">
-                    <i class="fas fa-play"></i>
-                    开始学习
-                </a>
-                <a href="#practice" class="btn btn-secondary">
-                    <i class="fas fa-code"></i>
-                    查看项目
-                </a>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=400&fit=crop" alt="CIPS社团活动">
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">物理服务器</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">150TB</span>
+                <span class="stat-label">存储空间</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">活跃成员</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5年</span>
+                <span class="stat-label">发展历程</span>
             </div>
         </div>
     </section>
 
-    <!-- 语音控制 -->
-    <div class="voice-control">
-        <button class="voice-btn" title="语音控制" aria-label="启用或关闭语音播放">
-            <i class="fas fa-volume-up"></i>
-        </button>
-    </div>
-
-    <!-- 概述部分 -->
-    <section id="overview" class="overview">
+    <!-- 关于我们部分 -->
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header">
-                <h2>课程概述</h2>
-                <p>全面掌握面向对象编程在大模型开发中的应用</p>
-            </div>
+            <h2 class="section-title">关于 CIPS</h2>
 
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-cubes"></i>
-                    </div>
-                    <h3>面向对象基础</h3>
-                    <p>深入理解类、对象、继承、多态等核心概念，为大模型架构设计打下坚实基础。</p>
-                    <ul>
-                        <li>类与对象设计模式</li>
-                        <li>继承与多态应用</li>
-                        <li>封装与抽象原则</li>
-                        <li>设计模式实战</li>
-                    </ul>
-                </div>
-                
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>机器学习架构</h3>
-                    <p>学习如何用面向对象的思维构建可扩展、可维护的机器学习系统。</p>
-                    <ul>
-                        <li>数据处理类设计</li>
-                        <li>模型基类架构</li>
-                        <li>训练流程管理</li>
-                        <li>评估系统构建</li>
-                    </ul>
-                </div>
-                
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>深度学习实现</h3>
-                    <p>掌握神经网络层的面向对象设计，实现高效的深度学习框架。</p>
-                    <ul>
-                        <li>神经网络层设计</li>
-                        <li>Transformer架构</li>
-                        <li>注意力机制实现</li>
-                        <li>模型组合策略</li>
-                    </ul>
-                </div>
-                
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>分布式训练</h3>
-                    <p>构建支持大规模分布式训练的面向对象架构系统。</p>
-                    <ul>
-                        <li>分布式架构设计</li>
-                        <li>参数服务器模式</li>
-                        <li>容错机制实现</li>
-                        <li>性能优化技术</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>我们的使命</h3>
+                    <p>南阳理工学院计算机与信息化处理协会（CIPS）是由在校的 GNU/Linux 爱好者发起并组成的团体。我们致力于推广自由软件价值，传播开源技术文化，为广大同学提供专业的技术交流平台。</p>
 
-            <div class="video-showcase">
-                <h3>课程演示视频</h3>
-                <div class="video-grid">
-                    <div class="video-item">
-                        <video controls poster="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop">
-                            <source src="video1.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
-                        <p>面向对象编程概念介绍</p>
+                    <h3>技术实力</h3>
+                    <p>协会拥有8台物理服务器集群，提供150TB存储空间，为成员提供真实的服务器运维环境。我们不仅是学习者，更是实践者，在技术探索的道路上不断前进。</p>
+
+                    <h3>特色功能</h3>
+                    <p>定期举办技术分享会、编程训练营、开源项目实战等活动，为成员提供从理论学习到实践应用的完整技术成长路径。</p>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-server"></i>
+                        <h4>服务器运维</h4>
+                        <p>管理8台物理服务器集群，提供150TB存储空间</p>
                     </div>
-                    <div class="video-item">
-                        <video controls poster="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop">
-                            <source src="video2.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
-                        <p>大模型训练流程演示</p>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h4>技术交流</h4>
+                        <p>定期举办技术分享会和编程训练营</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4>竞赛指导</h4>
+                        <p>ACM、蓝桥杯、网络安全竞赛等专业培训</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>开源推广</h4>
+                        <p>宣传自由软件价值，推广开源技术应用</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 基础知识部分 -->
-    <section id="fundamentals" class="fundamentals">
+    <!-- 活动介绍部分 -->
+    <section id="activities" class="activities-section">
         <div class="container">
-            <div class="section-header">
-                <h2>基础知识</h2>
-                <p>系统化的学习路径，从基础到高级逐步提升</p>
-            </div>
+            <h2 class="section-title">社团活动</h2>
 
-            <div class="curriculum">
-                <div class="curriculum-nav">
-                    <button class="curriculum-tab" data-tab="oop">面向对象基础</button>
-                    <button class="curriculum-tab" data-tab="ml">机器学习基础</button>
-                    <button class="curriculum-tab" data-tab="deep">深度学习架构</button>
-                    <button class="curriculum-tab" data-tab="advanced">高级主题</button>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop" alt="技术分享会">
+                    <div class="activity-content">
+                        <span class="activity-tag">每周举办</span>
+                        <h3>技术分享会</h3>
+                        <p>每周定期举办技术分享会，成员分享最新技术动态、项目经验和学习心得，营造浓厚的技术交流氛围。</p>
+                    </div>
                 </div>
 
-                <div class="curriculum-content">
-                    <div id="oop" class="curriculum-panel">
-                        <h3>面向对象编程基础</h3>
-                        <div class="lesson-list">
-                            <div class="lesson-item">
-                                <div class="lesson-number">01</div>
-                                <div class="lesson-content">
-                                    <h4>类与对象</h4>
-                                    <p>理解面向对象编程的核心概念和设计原则</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">基础</span>
-                                        <span class="tag">30分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="类与对象是面向对象编程的核心概念。类是对象的蓝图，定义了对象的属性和行为。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-
-                            <div class="lesson-item">
-                                <div class="lesson-number">02</div>
-                                <div class="lesson-content">
-                                    <h4>继承与多态</h4>
-                                    <p>掌握代码复用和接口设计的高级技巧</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">中级</span>
-                                        <span class="tag">45分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="继承允许我们创建基于现有类的新类，继承其属性和方法。多态性使得同一接口可以处理不同类型的对象。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-
-                            <div class="lesson-item">
-                                <div class="lesson-number">03</div>
-                                <div class="lesson-content">
-                                    <h4>封装与抽象</h4>
-                                    <p>掌握数据隐藏和接口设计的原则</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">中级</span>
-                                        <span class="tag">40分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="封装是隐藏对象内部实现细节的原则。抽象是简化复杂系统的过程，只暴露必要的接口。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" alt="编程训练营">
+                    <div class="activity-content">
+                        <span class="activity-tag">月度活动</span>
+                        <h3>编程训练营</h3>
+                        <p>针对不同水平的同学开设编程训练营，从基础语法到高级算法，系统性提升编程能力和解决问题的思维。</p>
                     </div>
+                </div>
 
-                    <div id="ml" class="curriculum-panel">
-                        <h3>机器学习基础</h3>
-                        <div class="lesson-list">
-                            <div class="lesson-item">
-                                <div class="lesson-number">04</div>
-                                <div class="lesson-content">
-                                    <h4>数据处理类设计</h4>
-                                    <p>构建可重用的数据预处理和特征工程类</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">实用</span>
-                                        <span class="tag">50分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="数据处理是机器学习的第一步。我们将学习如何设计可重用的数据处理类，包括数据清洗、特征提取和数据转换。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-
-                            <div class="lesson-item">
-                                <div class="lesson-number">05</div>
-                                <div class="lesson-content">
-                                    <h4>模型基类架构</h4>
-                                    <p>设计通用的机器学习模型基类和接口</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">架构</span>
-                                        <span class="tag">60分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="模型基类定义了所有机器学习模型的通用接口，包括训练、预测、评估等方法。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="项目实战">
+                    <div class="activity-content">
+                        <span class="activity-tag">长期项目</span>
+                        <h3>开源项目实战</h3>
+                        <p>组织成员参与真实的开源项目开发，从需求分析到代码实现，体验完整的软件开发流程。</p>
                     </div>
+                </div>
 
-                    <div id="deep" class="curriculum-panel">
-                        <h3>深度学习架构</h3>
-                        <div class="lesson-list">
-                            <div class="lesson-item">
-                                <div class="lesson-number">06</div>
-                                <div class="lesson-content">
-                                    <h4>神经网络层的类设计</h4>
-                                    <p>实现各种神经网络层的面向对象设计</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">核心</span>
-                                        <span class="tag">70分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="神经网络层是深度学习的基本构建块。我们将学习如何设计线性层、卷积层、注意力层等的类结构。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-
-                            <div class="lesson-item">
-                                <div class="lesson-number">07</div>
-                                <div class="lesson-content">
-                                    <h4>Transformer架构实现</h4>
-                                    <p>深入理解并实现Transformer的OOP架构</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">高级</span>
-                                        <span class="tag">90分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="Transformer是现代大模型的核心架构。我们将深入学习其多头注意力机制和前馈网络的面向对象实现。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop" alt="竞赛培训">
+                    <div class="activity-content">
+                        <span class="activity-tag">赛前集训</span>
+                        <h3>竞赛培训</h3>
+                        <p>为ACM、蓝桥杯、网络安全竞赛等各类编程竞赛提供专业培训，助力成员在竞赛中取得优异成绩。</p>
                     </div>
+                </div>
 
-                    <div id="advanced" class="curriculum-panel">
-                        <h3>高级主题</h3>
-                        <div class="lesson-list">
-                            <div class="lesson-item">
-                                <div class="lesson-number">08</div>
-                                <div class="lesson-content">
-                                    <h4>分布式训练架构</h4>
-                                    <p>设计支持多GPU和多节点的训练框架</p>
-                                    <div class="lesson-tags">
-                                        <span class="tag">专家</span>
-                                        <span class="tag">120分钟</span>
-                                    </div>
-                                </div>
-                                <button class="lesson-play" data-text="分布式训练是大模型训练的关键技术。我们将学习如何设计可扩展的分布式训练架构。" title="播放语音" aria-label="播放课程内容语音">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" alt="服务器运维">
+                    <div class="activity-content">
+                        <span class="activity-tag">实践操作</span>
+                        <h3>服务器运维实践</h3>
+                        <p>提供真实的服务器环境，让成员参与服务器配置、维护和优化，积累宝贵的运维经验。</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a814c963?w=400&h=250&fit=crop" alt="技术讲座">
+                    <div class="activity-content">
+                        <span class="activity-tag">特邀嘉宾</span>
+                        <h3>专家技术讲座</h3>
+                        <p>邀请业界专家和优秀校友举办技术讲座，分享前沿技术趋势和职业发展经验。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 实践项目部分 -->
-    <section id="practice" class="practice">
+    <!-- 加入我们部分 -->
+    <section id="join" class="join-section">
         <div class="container">
-            <div class="section-header">
-                <h2>实践项目</h2>
-                <p>通过实际项目深入理解理论知识的应用</p>
-            </div>
+            <h2 class="section-title">加入我们</h2>
 
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="项目1">
-                        <div class="project-overlay">
-                            <span class="project-level">初级</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>简单神经网络框架</h3>
-                        <p>从零开始构建一个简单的神经网络框架，理解基础概念</p>
-                        <div class="project-features">
-                            <span>层次结构设计</span>
-                            <span>前向传播</span>
-                            <span>反向传播</span>
-                        </div>
-                        <div class="project-meta">
-                            <span><i class="fas fa-clock"></i> 2-3天</span>
-                            <span><i class="fas fa-code"></i> Python</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="join-content">
+                <div class="join-info">
+                    <h3>加入要求</h3>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-check"></i> 对计算机技术有浓厚兴趣</li>
+                        <li><i class="fas fa-check"></i> 具备基础的编程能力</li>
+                        <li><i class="fas fa-check"></i> 愿意学习和分享技术知识</li>
+                        <li><i class="fas fa-check"></i> 认同开源文化和自由软件理念</li>
+                        <li><i class="fas fa-check"></i> 有团队合作精神</li>
+                    </ul>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop" alt="项目2">
-                        <div class="project-overlay">
-                            <span class="project-level">中级</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>文本分类系统</h3>
-                        <p>构建一个完整的文本分类系统，包含数据处理和模型训练</p>
-                        <div class="project-features">
-                            <span>数据预处理类</span>
-                            <span>特征提取器</span>
-                            <span>分类器集成</span>
-                        </div>
-                        <div class="project-meta">
-                            <span><i class="fas fa-clock"></i> 1周</span>
-                            <span><i class="fas fa-code"></i> PyTorch</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="项目3">
-                        <div class="project-overlay">
-                            <span class="project-level">高级</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Mini-GPT实现</h3>
-                        <p>实现一个小型的GPT模型，深入理解Transformer架构</p>
-                        <div class="project-features">
-                            <span>注意力机制</span>
-                            <span>位置编码</span>
-                            <span>语言建模</span>
-                        </div>
-                        <div class="project-meta">
-                            <span><i class="fas fa-clock"></i> 2周</span>
-                            <span><i class="fas fa-code"></i> PyTorch</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=250&fit=crop" alt="项目4">
-                        <div class="project-overlay">
-                            <span class="project-level">专家</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>分布式训练平台</h3>
-                        <p>构建支持多GPU和多节点的分布式训练平台</p>
-                        <div class="project-features">
-                            <span>分布式架构</span>
-                            <span>参数服务器</span>
-                            <span>容错机制</span>
-                        </div>
-                        <div class="project-meta">
-                            <span><i class="fas fa-clock"></i> 1个月</span>
-                            <span><i class="fas fa-code"></i> 多技术栈</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 资源下载部分 -->
-    <section id="resources" class="resources">
-        <div class="container">
-            <div class="section-header">
-                <h2>资源下载</h2>
-                <p>丰富的学习资源和开发工具</p>
-            </div>
-
-            <div class="resources-grid">
-                <div class="resource-category">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>源代码</h3>
-                    </div>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>神经网络框架源码</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>Transformer实现</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>分布式训练代码</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
+                    <h3>加入收获</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-star"></i> 专业的技术指导和培训</li>
+                        <li><i class="fas fa-star"></i> 真实的项目开发经验</li>
+                        <li><i class="fas fa-star"></i> 服务器运维实践机会</li>
+                        <li><i class="fas fa-star"></i> 竞赛培训和参赛机会</li>
+                        <li><i class="fas fa-star"></i> 优秀的技术交流平台</li>
+                        <li><i class="fas fa-star"></i> 丰富的学习资源</li>
                     </ul>
                 </div>
 
-                <div class="resource-category">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>数据集</h3>
-                    </div>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>文本分类数据集</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>语言模型训练数据</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>预训练词向量</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form">
+                        <h3>社团报名表</h3>
 
-                <div class="resource-category">
-                    <div class="category-header">
-                        <i class="fas fa-book"></i>
-                        <h3>学习资料</h3>
-                    </div>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>课程讲义PDF</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>架构设计图</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>参考论文合集</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                <div class="resource-category">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>开发工具</h3>
-                    </div>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>环境配置脚本</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>Jupyter Notebook模板</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">
-                                <span>调试和可视化工具</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        <div class="form-group">
+                            <label for="studentId">学号 *</label>
+                            <input type="text" id="studentId" name="studentId" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">学院 *</label>
+                            <select id="college" name="college" required>
+                                <option value="">请选择学院</option>
+                                <option value="计算机与信息工程学院">计算机与信息工程学院</option>
+                                <option value="软件学院">软件学院</option>
+                                <option value="电子与电气工程学院">电子与电气工程学院</option>
+                                <option value="机械与汽车工程学院">机械与汽车工程学院</option>
+                                <option value="土木工程学院">土木工程学院</option>
+                                <option value="建筑与城市规划学院">建筑与城市规划学院</option>
+                                <option value="经济管理学院">经济管理学院</option>
+                                <option value="外国语学院">外国语学院</option>
+                                <option value="艺术学院">艺术学院</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="major">专业 *</label>
+                            <input type="text" id="major" name="major" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grade">年级 *</label>
+                            <select id="grade" name="grade" required>
+                                <option value="">请选择年级</option>
+                                <option value="大一">大一</option>
+                                <option value="大二">大二</option>
+                                <option value="大三">大三</option>
+                                <option value="大四">大四</option>
+                                <option value="研究生">研究生</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">联系电话 *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">邮箱地址</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">编程经验</label>
+                            <textarea id="experience" name="experience" rows="3" placeholder="请简述您的编程经验和技术背景"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivation">加入动机</label>
+                            <textarea id="motivation" name="motivation" rows="3" placeholder="请说明您加入CIPS的原因和期望"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            提交报名
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -554,65 +294,94 @@
     <!-- 联系我们部分 -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>联系我们</h2>
-                <p>有任何问题或建议，欢迎与我们联系</p>
-            </div>
+            <h2 class="section-title">联系我们</h2>
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>学习社区</h3>
+                    <h3>联系方式</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>邮箱</strong>
-                            <span>llm-training@example.com</span>
+                            <span>cips@nyist.edu.cn</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fab fa-github"></i>
+                        <i class="fas fa-globe"></i>
                         <div>
-                            <strong>GitHub</strong>
-                            <span>github.com/llm-training-guide</span>
+                            <strong>官网</strong>
+                            <span>https://cips.nyist.edu.cn</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fab fa-discord"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <strong>Discord</strong>
-                            <span>加入学习讨论群</span>
+                            <strong>地址</strong>
+                            <span>南阳理工学院 13号楼211室</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-qq"></i>
+                        <div>
+                            <strong>QQ群</strong>
+                            <span>123456789</span>
+                        </div>
+                    </div>
+
+                    <h3>社团负责人</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>张同学</h4>
+                                <p>社团主席</p>
+                                <span>负责社团整体运营</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>李同学</h4>
+                                <p>技术部长</p>
+                                <span>负责技术培训和项目指导</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <h3>发送消息</h3>
+                    <h3>快速咨询</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">姓名</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="contactName">姓名</label>
+                            <input type="text" id="contactName" name="contactName" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">邮箱</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="contactEmail">邮箱</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">主题</label>
+                            <label for="subject">咨询类型</label>
                             <select id="subject" name="subject" required>
                                 <option value="">请选择</option>
-                                <option value="course">课程咨询</option>
+                                <option value="join">加入咨询</option>
+                                <option value="activity">活动咨询</option>
                                 <option value="technical">技术问题</option>
-                                <option value="suggestion">建议反馈</option>
-                                <option value="collaboration">合作咨询</option>
+                                <option value="cooperation">合作咨询</option>
+                                <option value="other">其他</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">消息内容</label>
+                            <label for="message">咨询内容</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn-primary">
                             <i class="fas fa-paper-plane"></i>
-                            发送消息
+                            发送咨询
                         </button>
                     </form>
                 </div>
@@ -620,60 +389,87 @@
         </div>
     </section>
 
+    <!-- 成功提交模态框 -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> 报名成功！</h3>
+                <button class="modal-close" onclick="closeModal()" aria-label="关闭模态框">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>感谢您的报名！我们已收到您的申请信息。</p>
+                <p>我们会在3个工作日内通过邮件或电话与您联系，请保持通讯畅通。</p>
+                <div class="modal-tips">
+                    <h4>接下来您可以：</h4>
+                    <ul>
+                        <li>关注我们的官方网站获取最新动态</li>
+                        <li>加入QQ群与其他成员交流</li>
+                        <li>准备参加面试（如需要）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="closeModal()">确定</button>
+            </div>
+        </div>
+    </div>
+
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>基于面向对象的大模型训练指南</h3>
-                    <p>致力于推广面向对象编程在人工智能领域的最佳实践</p>
+                    <h3>南阳理工学院 CIPS</h3>
+                    <p>计算机与信息化处理协会致力于推广GNU/Linux技术和开源文化，为同学们提供专业的技术交流平台。</p>
                     <div class="social-links">
-                        <a href="#" title="GitHub" aria-label="访问我们的GitHub仓库"><i class="fab fa-github"></i></a>
-                        <a href="#" title="Twitter" aria-label="关注我们的Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn" aria-label="在LinkedIn上联系我们"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="YouTube" aria-label="订阅我们的YouTube频道"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="官网" aria-label="访问CIPS官网"><i class="fas fa-globe"></i></a>
+                        <a href="#" title="GitHub" aria-label="访问我们的GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="QQ群" aria-label="加入QQ群"><i class="fab fa-qq"></i></a>
+                        <a href="#" title="邮箱" aria-label="发送邮件"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
-                        <li><a href="#overview">课程概述</a></li>
-                        <li><a href="#fundamentals">基础知识</a></li>
-                        <li><a href="#practice">实践项目</a></li>
-                        <li><a href="#resources">资源下载</a></li>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#activities">社团活动</a></li>
+                        <li><a href="#join">加入我们</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h4>技术栈</h4>
+                    <h4>技术领域</h4>
                     <ul>
-                        <li>PyTorch</li>
-                        <li>Transformers</li>
-                        <li>CUDA</li>
-                        <li>分布式训练</li>
+                        <li>GNU/Linux</li>
+                        <li>开源软件</li>
+                        <li>服务器运维</li>
+                        <li>编程竞赛</li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h4>支持</h4>
+                    <h4>联系信息</h4>
                     <ul>
-                        <li><a href="#contact">联系我们</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">技术支持</a></li>
-                        <li><a href="#">学习路径</a></li>
+                        <li><i class="fas fa-envelope"></i> cips@nyist.edu.cn</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 13号楼211室</li>
+                        <li><i class="fas fa-globe"></i> cips.nyist.edu.cn</li>
+                        <li><a href="#contact">更多联系方式</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2024 基于面向对象的大模型训练指南. 保留所有权利.</p>
+                    <p>&copy; 2024 南阳理工学院计算机与信息化处理协会. 保留所有权利.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#">隐私政策</a>
                     <a href="#">使用条款</a>
-                    <a href="#">Cookie政策</a>
+                    <a href="#">加入我们</a>
                 </div>
             </div>
         </div>
